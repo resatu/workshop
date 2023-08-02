@@ -1,0 +1,25 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "start": "npm run watch:eleventy & npm run watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resatu/workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resatu/workshop/issues"
+  },
+  "homepage": "https://github.com/resatu/workshop#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "sass": "^1.64.2"
+  }
+}
