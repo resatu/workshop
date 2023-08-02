@@ -50,7 +50,7 @@ a {
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        
+
         &:hover {
             background-color: #FCB400;
             color: #FFFFFF;
@@ -66,10 +66,32 @@ a {
         text-transform: uppercase;
         // center text
         text-align: center;
-        // add margin
-        margin: 0;
         // add padding
+        padding: 50px;
         border-radius: 0 0 25px 25px;
         
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    &_left{
+        display: flex;
+        flex-direction: column;
+    }
+    &_left-category {
+        display: flex;
+        flex-direction: column;
+    }
+    &_left-category-item{
+        display: flex;
+        flex-direction: row;
+    }
+    &_category-image{
+        display: flex;
+        width: 200px;
+        height: 200px;
     }
 }

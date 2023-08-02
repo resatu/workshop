@@ -6,7 +6,9 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:_site/css --watch",
-    "start": "npm run watch:eleventy & npm run watch:sass"
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,8 @@
   },
   "homepage": "https://github.com/resatu/workshop#readme",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0"
   },
   "devDependencies": {
     "sass": "^1.64.2"

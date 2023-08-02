@@ -1,6 +1,9 @@
 const sass = require("sass");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("**/*.img");
+  eleventyConfig.addPassthroughCopy("**/*.png");
+
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css", // optional, default: "html"
